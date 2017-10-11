@@ -5,6 +5,9 @@ in vec4 vColor;
 
 uniform mat4 uModelViewMatrix;
 
+out vec4 color;
+
 void main () {
-	gl_Position = vPosition;
+	gl_Position = uModelViewMatrix * vPosition;
+	color = vColor;
 }

@@ -7,6 +7,7 @@ View *v;
 
 void initView() {
   v = new View(half_width, half_height, half_depth);
+  v->addSampleCube();
 }
 
 int main(int argc, char** argv) {
@@ -29,7 +30,7 @@ int main(int argc, char** argv) {
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   // ! Create a windowed mode window and its OpenGL context
-  window = glfwCreateWindow(640, 480, "OpenGL Template", NULL, NULL);
+  window = glfwCreateWindow(half_width * 2, half_height * 2, "OpenGL Template", NULL, NULL);
   if (!window) {
     glfwTerminate();
     return -1;
@@ -63,6 +64,7 @@ int main(int argc, char** argv) {
 
   // Initialize GL state
   mynamespace::initGL();
+  initView();
 
   // Loop until the user closes the window
   while (glfwWindowShouldClose(window) == 0) {

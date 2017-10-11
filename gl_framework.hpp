@@ -13,4 +13,4 @@ namespace mynamespace {
   void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 };  // namespace mynamespace
 
-#endif  GL_FRAMEWORK_HPP_
+#endif  // GL_FRAMEWORK_HPP_

@@ -14,11 +14,11 @@ endif
 GLEWLIB = -lGLEW
 GLFWLIB = -lglfw
 LIBS = $(OPENGLLIB) $(GLEWLIB) $(GLFWLIB)
-CPPFLAGS = -std=c++11 -I/usr/local/include -I./
+CPPFLAGS = -std=c++11 -g -I/usr/local/include -I./
 
 BIN = out
-SRCS = main.cpp gl_framework.cpp shader_util.cpp
-INCLUDES = gl_framework.hpp shader_util.hpp
+SRCS = main.cpp view.cpp gl_framework.cpp shader_util.cpp
+INCLUDES = view.hpp gl_framework.hpp shader_util.hpp
 
 all: $(BIN)
 

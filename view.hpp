@@ -32,10 +32,17 @@ class View {
   GLuint num_vao;
   GLuint num_vbo;
 
+  GLuint v_position;
+  GLuint v_color;
+  GLuint u_model_view_matrix;
+
+  glm::mat4 ortho_matrix;
+  glm::mat4 model_view_matrix;
+
   void initShadersGL();
   void initBuffersGL();
  public:
-  View();
+  View(GLfloat h_width, GLfloat h_height, GLfloat h_depth);
   void renderGL();
   void addSampleCube();
 };
