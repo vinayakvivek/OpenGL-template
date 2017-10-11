@@ -44,7 +44,7 @@ class View {
  public:
   View(GLfloat h_width, GLfloat h_height, GLfloat h_depth);
   void renderGL();
-  void addSampleCube();
+  void addSampleTriangle();
 };
 
 #endif  // VIEW_HPP_

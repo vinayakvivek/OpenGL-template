@@ -7,7 +7,7 @@ View *v;
 
 void initView() {
   v = new View(half_width, half_height, half_depth);
-  v->addSampleCube();
+  v->addSampleTriangle();
 }
 
 int main(int argc, char** argv) {

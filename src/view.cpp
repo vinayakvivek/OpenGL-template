@@ -52,7 +52,7 @@ void View::renderGL() {
   glDrawArrays(GL_TRIANGLES, 0, points.size());
 }
 
-void View::addSampleCube() {
+void View::addSampleTriangle() {
   points = std::vector<glm::vec4>({
     glm::vec4(0.0, 0.0, 0.0, 1.0),
     glm::vec4(-200.0, 0.0, 0.0, 1.0),
