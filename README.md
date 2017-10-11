@@ -7,3 +7,4 @@
 	cmake ..
 	make
 ```
+- if build succeeds, an executable `opengl_template` will be created in `build/`
